@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/Moon_CS305_Lab1
+T_opt
+!s110 1710202496
+VCA3_^J>lCVdM4f0[fk;[?3
+04 7 9 work counter behaviour 1
+=1-cc96e51e1ea5-65ef9e7f-222-4790
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OE;O;2020.2;71
+R0
+T_opt1
+!s110 1710205026
+VLQFP=[YSUm`cJL`>Dn:IA2
+Z4 04 12 7 work test_counter my_test 1
+=1-cc96e51e1ea5-65efa861-1d5-4a44
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1710208607
+V[;T__S0GVI_>PJiLo2zMc2
+R4
+=1-cc96e534b1d5-65efb65e-348-51a8
+R1
+R2
+n@_opt2
+R3
+R0
+Ecounter
+Z5 w1710205004
+!i122 38
+R0
+Z6 8H:/Moon_CS305_Lab1/test_up_counter.vhd
+Z7 FH:/Moon_CS305_Lab1/test_up_counter.vhd
+l0
+L1 1
+VA^B6ANn3i1LmQnnGKXNT>2
+!s100 EA@3BhA1G4UI>ZTVB^gI70
+Z8 OE;C;2020.2;71
+32
+Z9 !s110 1710209021
+!i10b 1
+Z10 !s108 1710209020.000000
+Z11 !s90 -reportprogress|300|-work|work|H:/Moon_CS305_Lab1/test_up_counter.vhd|
+Z12 !s107 H:/Moon_CS305_Lab1/test_up_counter.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehaviour
+Z15 DEx4 work 7 counter 0 22 A^B6ANn3i1LmQnnGKXNT>2
+!i122 38
+l7
+Z16 L6 17
+Z17 VL<4T4n^1AEhg15ee>kgT53
+Z18 !s100 JdUb]V^HPPaE=KzNb][G53
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etest_counter
+Z19 w1710198796
+!i122 37
+R0
+Z20 8H:/Moon_CS305_Lab1/test_counter.vhd
+Z21 FH:/Moon_CS305_Lab1/test_counter.vhd
+l0
+L2 1
+VmQ[7Dd<Y38=e=WS4DGkag1
+!s100 cXXK5<eTTH[Q69O5hIha22
+R8
+32
+Z22 !s110 1710209020
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-work|work|H:/Moon_CS305_Lab1/test_counter.vhd|
+Z24 !s107 H:/Moon_CS305_Lab1/test_counter.vhd|
+!i113 0
+R13
+R14
+Amy_test
+DEx4 work 12 test_counter 0 22 mQ[7Dd<Y38=e=WS4DGkag1
+!i122 37
+l13
+L5 28
+VOlaViIz8aRGn6Qk6DRg8U0
+!s100 g@PnLgfIPj;jj?<`Wi1a;3
+R8
+32
+R22
+!i10b 1
+R10
+R23
+R24
+!i113 0
+R13
+R14
