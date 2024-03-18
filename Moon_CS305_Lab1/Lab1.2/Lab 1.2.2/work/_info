@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mooni\Downloads\Moon_CS305_Lab1\Lab1.2\Lab 1.2.2
+Etest_wgen2
+Z1 w1710380841
+Z2 dC:\Users\mooni\Downloads\Moon_CS305_Lab1\Lab1.2\Lab 1.2.2
+Z3 8C:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/test_wgen2.vhd
+Z4 FC:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/test_wgen2.vhd
+l0
+L2
+VISA@Y]5MN8`H^n_oVQd9h0
+!s100 ]3D1TLAkjh@aB2>a2kH8;3
+Z5 OV;C;10.1d;51
+32
+!i10b 1
+Z6 !s108 1710742933.722000
+Z7 !s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/test_wgen2.vhd|
+Z8 !s107 C:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/test_wgen2.vhd|
+Z9 o-work work -O0
+Z10 tExplicit 1
+Atest
+Z11 DEx4 work 10 test_wgen2 0 22 ISA@Y]5MN8`H^n_oVQd9h0
+l15
+L5
+Z12 V>gfUOzJ^MgQIQ_iIXF0zE0
+Z13 !s100 PXUzC@Xoh1ikg_2i6UZ<90
+R5
+32
+!i10b 1
+R6
+R7
+R8
+R9
+R10
+Ewgen2
+Z14 w1710742927
+R2
+Z15 8C:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/wgen2.vhd
+Z16 FC:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/wgen2.vhd
+l0
+L1
+VHOoIfc@dWa_]GPEd=`9AJ1
+R5
+32
+Z17 !s108 1710742933.651000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/wgen2.vhd|
+Z19 !s107 C:/Users/mooni/Downloads/Moon_CS305_Lab1/Lab1.2/Lab 1.2.2/wgen2.vhd|
+R9
+R10
+!s100 CK9TALzma577X?g@D@RKJ1
+!i10b 1
+Abehaviour2
+DEx4 work 5 wgen2 0 22 HOoIfc@dWa_]GPEd=`9AJ1
+l10
+L7
+Vf]gASd]@eOeT=D_3C2ThI1
+R5
+32
+R17
+R18
+R19
+R9
+R10
+!s100 IhVY^RIzHJI<ESakShXa81
+!i10b 1
