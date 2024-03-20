@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mooni\Downloads\Moon_CS305_Lab2\Lab2.1
+Ecombined4counter
+w1710809719
+Z1 dC:\Users\mooni\Downloads\Moon_CS305_Lab2\Lab2.1
+8C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd
+FC:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd
+l0
+L1
+VFVLKh0=9[g<`SQ4WoLcFb1
+!s100 I]l;6CngXlbCbNaiKmDeG3
+Z2 OV;C;10.1d;51
+32
+!i10b 1
+!s108 1710812868.907000
+!s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd|
+!s107 C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd|
+Z3 o-work work -O0
+Z4 tExplicit 1
+Etest_counter
+Z5 w1710812861
+R1
+Z6 8C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd
+Z7 FC:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd
+l0
+L2
+VDfT:FLChg@ETYXN^0SBzo0
+R2
+32
+Z8 !s108 1710812868.797000
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd|
+Z10 !s107 C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd|
+R3
+R4
+!s100 9NM;2zcaaFZ[OhX35[LU50
+!i10b 1
+Amy_test
+DEx4 work 12 test_counter 0 22 DfT:FLChg@ETYXN^0SBzo0
+l15
+L5
+VAN=7M0fQ@U^0W=b0lJm>z2
+R2
+32
+R8
+R9
+R10
+R3
+R4
+!s100 :1dBDE??0bQokgm0_jZJC0
+!i10b 1
