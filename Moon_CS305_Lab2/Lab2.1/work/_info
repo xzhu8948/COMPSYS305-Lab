@@ -4,50 +4,80 @@ K3
 cModel Technology
 Z0 dC:\Users\mooni\Downloads\Moon_CS305_Lab2\Lab2.1
 Ecombined4counter
-w1710809719
-Z1 dC:\Users\mooni\Downloads\Moon_CS305_Lab2\Lab2.1
-8C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd
-FC:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd
+Z1 w1710986132
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\mooni\Downloads\Moon_CS305_Lab2\Lab2.1
+Z7 8C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd
+Z8 FC:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd
 l0
-L1
-VFVLKh0=9[g<`SQ4WoLcFb1
-!s100 I]l;6CngXlbCbNaiKmDeG3
-Z2 OV;C;10.1d;51
-32
-!i10b 1
-!s108 1710812868.907000
-!s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd|
-!s107 C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd|
-Z3 o-work work -O0
-Z4 tExplicit 1
-Etest_counter
-Z5 w1710812861
-R1
-Z6 8C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd
-Z7 FC:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd
-l0
-L2
-VDfT:FLChg@ETYXN^0SBzo0
-R2
-32
-Z8 !s108 1710812868.797000
-Z9 !s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd|
-Z10 !s107 C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd|
-R3
-R4
-!s100 9NM;2zcaaFZ[OhX35[LU50
-!i10b 1
-Amy_test
-DEx4 work 12 test_counter 0 22 DfT:FLChg@ETYXN^0SBzo0
-l15
 L5
-VAN=7M0fQ@U^0W=b0lJm>z2
-R2
+V>?L[M;0`cn=mNYKkVzb=l2
+Z9 OV;C;10.1d;51
 32
-R8
-R9
-R10
+Z10 !s108 1710986142.126000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd|
+Z12 !s107 C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/combined4counter.vhd|
+Z13 o-work work -O0
+Z14 tExplicit 1
+!s100 @Q<1XGz[Dl;TQB:ieYo1l3
+!i10b 1
+Abehaviour1
+R2
 R3
 R4
-!s100 :1dBDE??0bQokgm0_jZJC0
+R5
+DEx4 work 16 combined4counter 0 22 >?L[M;0`cn=mNYKkVzb=l2
+l13
+L11
+VgP8bgzcMR82;z3<U>K`UF3
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!s100 [aFXR`I2BSFmRO6^4=_0n1
 !i10b 1
+Etest_counter
+Z15 w1710984496
+R2
+R3
+R4
+R5
+R6
+Z16 8C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd
+Z17 FC:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd
+l0
+L7
+VN[BD70:M2W@CmkVER:9f@1
+!s100 `kE=gm<kkE]njPaSTJcL31
+R9
+32
+!i10b 1
+Z18 !s108 1710986142.318000
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd|
+Z20 !s107 C:/Users/mooni/Downloads/Moon_CS305_Lab2/Lab2.1/test_counter.vhd|
+R13
+R14
+Amy_test
+R2
+R3
+R4
+R5
+Z21 DEx4 work 12 test_counter 0 22 N[BD70:M2W@CmkVER:9f@1
+l20
+L10
+Z22 VfjQDYDEz8m9JjhbEcL9DT2
+Z23 !s100 N?eb_`ZXg3CdD6E^UW]jI1
+R9
+32
+!i10b 1
+R18
+R19
+R20
+R13
+R14
