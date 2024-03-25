@@ -1,0 +1,353 @@
+m255
+K4
+z2
+!s11e vcom 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3
+T_opt
+!s110 1711409418
+VG=c>D5jCg=<7Ik=U=RA_Q1
+04 12 4 work test_lab2_q3 test 1
+=1-cc96e534b4e2-6602090a-124-4a3c
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OE;O;2020.2;71
+Elab2_q2
+Z1 w1711408071
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 19
+R0
+Z7 8C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q2.vhd
+Z8 FC:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q2.vhd
+l0
+L6 1
+Vc29aFz;8<;>e^Z>@@8O>d2
+!s100 z=IejUNedRG^f1<=<E:?>2
+Z9 OE;C;2020.2;71
+32
+Z10 !s110 1711409411
+!i10b 1
+Z11 !s108 1711409411.000000
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q2.vhd|
+Z13 !s107 C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q2.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Aoperation
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 lab2_q2 0 22 c29aFz;8<;>e^Z>@@8O>d2
+!i122 19
+l12
+L11 43
+V]XBkXm6zZCV2Mk33MZfZd3
+!s100 `K?21Hl4d2im?1GL_hVWV1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Elab2_q3
+Z16 w1711409403
+R2
+R3
+R4
+R5
+R6
+!i122 18
+R0
+Z17 8C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q3.vhd
+Z18 FC:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q3.vhd
+l0
+L6 1
+Va^4=kZ:>PB^G`5O?1k[CZ3
+!s100 N[oL?gP5gb6JG[:l;>bHO2
+R9
+32
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q3.vhd|
+Z20 !s107 C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/lab2_q3.vhd|
+!i113 0
+R14
+R15
+Astructural
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 lab2_q3 0 22 a^4=kZ:>PB^G`5O?1k[CZ3
+!i122 18
+l19
+L11 17
+V^^P`ZZU>02nkAaN9hC4eF2
+!s100 YE^9g?3lSE]^Qh;aFSS0J1
+R9
+32
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15
+Etest_lab2_q3
+Z21 w1711408069
+R2
+R3
+R4
+R5
+R6
+!i122 20
+R0
+Z22 8C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/test_lab2_q3.vhd
+Z23 FC:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/test_lab2_q3.vhd
+l0
+L7 1
+VDBHTC>]`B;Sj>:6HSPPJ^2
+!s100 FN@<Oi[G8D4INc65<bDn50
+R9
+32
+R10
+!i10b 1
+R11
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/test_lab2_q3.vhd|
+Z25 !s107 C:/Users/xzhu664/Downloads/Lab 2 Xinyue Zhu/Q3/test_lab2_q3.vhd|
+!i113 0
+R14
+R15
+Atest
+R2
+R3
+R4
+R5
+R6
+DEx4 work 12 test_lab2_q3 0 22 DBHTC>]`B;Sj>:6HSPPJ^2
+!i122 20
+l16
+L9 26
+Vi9NcF80TnCb;^]NfgiLzW1
+!s100 PHU>0mP=X6bVS?S?LCSio3
+R9
+32
+R10
+!i10b 1
+R11
+R24
+R25
+!i113 0
+R14
+R15
+src/vital2000/prmtvs_p_2000.vhd
+Fvhdl_src/vital2000/prmtvs_p_2000.vhd
+l0
+L50 1
+VG>kiXP8Q9dRClKfK1Zn7j1
+!s100 G>kiXP8Q9dRClKfK1Zn7j1
+R6
+31
+b1
+R32
+!i10b 1
+R33
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/prmtvs_p_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_p_2000.vhd|
+!i113 1
+R105
+R12
+Bbody
+DPx4 work 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+R104
+R21
+R20
+!i122 22
+8vhdl_src/vital2000/prmtvs_b_2000.vhd
+Fvhdl_src/vital2000/prmtvs_b_2000.vhd
+l0
+L33 1
+VL8@OL8nfVkLF;7TL8_DPa1
+!s100 L8@OL8nfVkLF;7TL8_DPa1
+R6
+31
+R32
+!i10b 1
+R33
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!i113 1
+R105
+R12
+Pvital_timing
+R21
+R20
+!i122 20
+R2
+R3
+8vhdl_src/vital2000/timing_p_2000.vhd
+Fvhdl_src/vital2000/timing_p_2000.vhd
+l0
+R94
+VJ>EBealN09f8GzldA[z2>3
+!s100 J>EBealN09f8GzldA[z2>3
+R6
+31
+b1
+R7
+!i10b 1
+R76
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_p_2000.vhd|
+!s107 vhdl_src/vital2000/timing_p_2000.vhd|
+!i113 1
+R105
+R12
+Bbody
+DPx4 work 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R21
+R20
+!i122 21
+8vhdl_src/vital2000/timing_b_2000.vhd
+Fvhdl_src/vital2000/timing_b_2000.vhd
+l0
+R22
+VKEim8d[eJ5dE^:mEG0P3S0
+!s100 KEim8d[eJ5dE^:mEG0P3S0
+R6
+31
+R7
+!i10b 1
+R76
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_b_2000.vhd|
+!s107 vhdl_src/vital2000/timing_b_2000.vhd|
+!i113 1
+R105
+R12
+m255
+K4
+z2
+!s8c locked
+!s11e vcom 2020.2 2020.04, Apr 19 2020
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+dC:/cygwin/pc_home/rhino/buildsites/2020.p/builds/win32/modeltech
+Penv
+!i122 1
+Z0 w1587353418
+Z1 d$MODEL_TECH/..
+Z2 8vhdl_src/std/env.vhd
+Z3 Fvhdl_src/std/env.vhd
+l0
+L1 1
+Vd?`1ck@NdeD@H3RZG7FgZ2
+!s100 d?`1ck@NdeD@H3RZG7FgZ2
+Z4 OE;C;2020.2;71
+32
+b1
+Z5 !s110 1587353550
+!i10b 1
+Z6 !s108 1587353550.000000
+Z7 !s90 -debuglib|-suppress|12110|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/env.vhd|
+Z8 !s107 vhdl_src/std/env.vhd|
+!i113 1
+Z9 o-suppress 12110 -debuglib -work std -dirpath {$MODEL_TECH/..}
+Z10 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+!i122 1
+l0
+L15 1
+VGO=IeNa]6JLe2BRN4G<kA2
+!s100 GO=IeNa]6JLe2BRN4G<kA2
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Pstandard
+!i122 0
+R0
+R1
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8 1
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R4
+33
+R5
+!i10b 1
+R6
+!s90 -debuglib|-suppress|12110|-s|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/standard.vhd|
+!s107 vhdl_src/std/standard.vhd|
+!i113 1
+o-suppress 12110 -debuglib -s -2008 -work std -dirpath {$MODEL_TECH/..}
+R10
+Ptextio
+!i122 2
+Z11 w1578762055
+R1
+Z12 8vhdl_src/std/textio.vhd
+Z13 Fvhdl_src/std/textio.vhd
+l0
+L1 1
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R4
+33
+b1
+R5
+!i10b 1
+R6
+Z14 !s90 -debuglib|-suppress|12110|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/textio.vhd|
+Z15 !s107 vhdl_src/std/textio.vhd|
+!i113 1
+Z16 o-suppress 12110 -debuglib -2008 -work std -dirpath {$MODEL_TECH/..}
+R10
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 2
+l0
+L186 1
+VOBFf4Pj<FG4ZXfzD:k]VN1
+!s100 OBFf4Pj<FG4ZXfzD:k]VN1
+R4
+33
+R5
+!i10b 1
+R6
+R14
+R15
+!i113 1
+R16
+R10

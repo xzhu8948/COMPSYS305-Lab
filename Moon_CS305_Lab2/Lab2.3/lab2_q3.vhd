@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
+
+entity lab2_q3 is
+	port(Clk, Enable, Reset: in std_logic;
+	     Q:  out unsigned(7 downto 0));
+end entity lab2_q3; 
+
+architecture Structural of lab2_q3 is
+	component lab2_q2 is
+		port(Clk, Direction, Enable, Init: in std_logic;
+	    	     Q: out unsigned(3 downto 0));
+	end component;
+
+signal digit_1, digit_2, total_value: unsigned (3 downto 0); 
+signal tenth_Enable: std_logic;
+begin
+
+	oneth: lab2_q2 port map ( Clk => Clk, Direction => '1', Enable => Enable, Init => Reset, Q => digit_2 );
+	tenth_Enable <= '1' when digit_2=0 else '0';
+
+	tenth : lab2_q2 port map ( Clk => Clk, Direction => '1', Enable => tenth_Enable, Init => Reset, Q => digit_1);
+
+	Q<=digit_1*10+digit_2;
+end architecture Structural;
+
+
+
