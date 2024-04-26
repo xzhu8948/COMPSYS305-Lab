@@ -1,17 +1,18 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
 
 entity test_BCD_counter is
 end entity test_BCD_counter;
 
 architecture test of test_BCD_counter is
-	signal t_clk, t_direction, t_init, t_enable : bit;
-	signal t_Q : std_logic_vector (3 downto 0);
+	signal t_clk, t_direction, t_init, t_enable : std_logic;
+	signal t_Q : unsigned (3 downto 0);
 
 	component BCD_counter is
-	port (Clk, Direction, Init, Enable : in bit;
-	      Q_Out : out std_logic_vector (3 downto 0));
+	port (Clk, Direction, Init, Enable : in std_logic;
+	      Q_Out : out unsigned (3 downto 0));
 	end component BCD_counter;
 
 begin

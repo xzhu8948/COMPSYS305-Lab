@@ -10,9 +10,9 @@ end entity BCD_counter;
 
 architecture behaviour of BCD_counter is
 	signal Q1: unsigned (3 downto 0);
+	variable Current_Mode: std_logic := '0';
 begin
 	process (Clk)
-	variable Current_Mode: std_logic := '0';
 	begin
 		--count
 		if (Clk'event and Clk = '1') then
