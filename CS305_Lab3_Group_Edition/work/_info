@@ -1,0 +1,198 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Willi\OneDrive\Documents\2024\COMPSYS 305\Lab 3
+Ebcd_counter
+Z1 w1711694582
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Willi\OneDrive\Documents\2024\COMPSYS 305\Lab 3
+Z7 8C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/bcd_counter.vhdl
+Z8 FC:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/bcd_counter.vhdl
+l0
+L5
+VbRmTogiJW3LEF78S5AdAA3
+Z9 OV;C;10.1d;51
+32
+Z10 !s108 1711713712.896000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/bcd_counter.vhdl|
+Z12 !s107 C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/bcd_counter.vhdl|
+Z13 o-work work -O0
+Z14 tExplicit 1
+!s100 RP4ITznzJWd4Yzf8NPXMa0
+!i10b 1
+Abehaviour
+R2
+R3
+R4
+R5
+DEx4 work 11 bcd_counter 0 22 bRmTogiJW3LEF78S5AdAA3
+l14
+L12
+VWGk_`A]?a2Yo1m@dUd[[72
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!s100 ;]TV5Nd8Uhd5o[_R6oCbd2
+!i10b 1
+Ebcd_to_sevenseg
+Z15 w1711428562
+R4
+R5
+R6
+Z16 8C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/BCD_to_7Seg.vhd
+Z17 FC:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/BCD_to_7Seg.vhd
+l0
+L7
+V_La796I8XHe^PeNhWl[NZ0
+R9
+32
+Z18 !s108 1711713712.938000
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/BCD_to_7Seg.vhd|
+Z20 !s107 C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/BCD_to_7Seg.vhd|
+R13
+R14
+!s100 O5oGY1:bKa5VcIdj`@:e@3
+!i10b 1
+Aarc1
+R4
+R5
+DEx4 work 15 bcd_to_sevenseg 0 22 _La796I8XHe^PeNhWl[NZ0
+l13
+L12
+VkjM4K=oMf=F_<ZJe@V0Kd3
+R9
+32
+R18
+R19
+R20
+R13
+R14
+!s100 ^h;O@=WdL]zM<<b<Y:X`^0
+!i10b 1
+Etest_bcd_counter
+Z21 w1711513092
+R2
+R3
+R4
+R5
+R6
+Z22 8C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_bcd_counter.vhdl
+Z23 FC:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_bcd_counter.vhdl
+l0
+L5
+VPl[[>0]L@g4iMgHW9KY:41
+R9
+32
+Z24 !s108 1711713712.982000
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_bcd_counter.vhdl|
+Z26 !s107 C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_bcd_counter.vhdl|
+R13
+R14
+!s100 YJGWdnR@2g6bdIM6Uz6:j2
+!i10b 1
+Atest
+R2
+R3
+R4
+R5
+DEx4 work 16 test_bcd_counter 0 22 Pl[[>0]L@g4iMgHW9KY:41
+l19
+L8
+VNcBIKoJh7MR2HH1Z2`0Y]2
+R9
+32
+R24
+R25
+R26
+R13
+R14
+!s100 H8::YO3f^7badKz2>`i^70
+!i10b 1
+Etest_timer
+Z27 w1711704923
+R2
+R3
+R4
+R5
+R6
+Z28 8C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_timer.vhdl
+Z29 FC:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_timer.vhdl
+l0
+L5
+Vg98PgN`0U1za;i8zTB0og3
+R9
+32
+Z30 !s108 1711713713.022000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_timer.vhdl|
+Z32 !s107 C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/test_timer.vhdl|
+R13
+R14
+!s100 nm`Yh<Ab5@z>ZOd1Pko2h2
+!i10b 1
+Atest
+R2
+R3
+R4
+R5
+DEx4 work 10 test_timer 0 22 g98PgN`0U1za;i8zTB0og3
+l25
+L8
+VP7UhkE28Kdi7Kk3O81c1C1
+R9
+32
+R30
+R31
+R32
+R13
+R14
+!s100 ?2>Yn0;_BEOe4:DBo@jeT3
+!i10b 1
+Etimer
+Z33 w1711713738
+Z34 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+R5
+R6
+Z35 8C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/timer.vhdl
+Z36 FC:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/timer.vhdl
+l0
+L6
+V81:JeJ[J87B]jD[_LlYTM2
+!s100 c:C]VZoeW6Ql];M6k7;6F2
+R9
+32
+!i10b 1
+Z37 !s108 1711713744.013000
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/timer.vhdl|
+Z39 !s107 C:/Users/Willi/OneDrive/Documents/2024/COMPSYS 305/Lab 3/timer.vhdl|
+R13
+R14
+Abehaviour
+R34
+R2
+R3
+R4
+R5
+Z40 DEx4 work 5 timer 0 22 81:JeJ[J87B]jD[_LlYTM2
+l37
+L17
+VJK4[VMT8;iZQcb]zhR@Fh1
+!s100 Pi`Z;d[kDJ<;6f3lfhV3P2
+R9
+32
+!i10b 1
+R37
+R38
+R39
+R13
+R14
