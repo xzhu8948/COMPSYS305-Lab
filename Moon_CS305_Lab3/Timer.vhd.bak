@@ -34,17 +34,9 @@ begin
 	--Oneth_Enable
 	Seconds_Oneth_Enable <= '1';
 	--Tenth_Enable
-	if (Seconds_Oneth_Number = "0000") then
-		Seconds_Tenth_Enable <= '1';
-	else
-		Seconds_Tenth_Enable <= '0';
-	end if;
-	--Mins Enable
-	if (Seconds_Tenth_Number = "0000") then
-		Mins_Enable <= '1';
-	else
-		Mins_Enable <= '0';
-	end if;
+	Seconds_Tenth_Enable <= '1' when (Seconds_Oneth_Number = "0000") else '0';
+	--Mins_Enable
+	Mins_Enable <= '1' when (Seconds_Tenth_Number = "0000") else '0';
 
 	--counter
 	Mins_Counter: BCD_counter port map (Clk => Clock, Direction => '1', Init => Start, Enable => Mins_Enable, Q_out => Mins_Number);
@@ -58,9 +50,6 @@ begin
 	Seconds_Oneth_7Seg: BCD_to_7Seg port map (BCD_digit => Seconds_Oneth_Number, SevenSeg_out => Seconds_oneth);
 
 	--finish count and output Time_Out
-	if (Mins_Number = "0000" and Seconds_Tenth_Number = "0000" and Seconds_Oneth_Number = "0000") then
-		Time_Out <= '1';
-	else
-		Time_Out <= '0';
-	end if;
+	Time_Out <= '1' when ((Mins_Number = "0000") and (Seconds_Tenth_Number = "0000") and (Seconds_Oneth_Number = "0000")) else '0';
+
 end architecture behaviour;

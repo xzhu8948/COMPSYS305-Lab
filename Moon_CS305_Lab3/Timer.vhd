@@ -12,6 +12,7 @@ end entity Timer;
 
 architecture behaviour of Timer is
 
+	signal Mins_Start, Seconds_Tenth_Start, Seconds_Oneth_Start: std_logic_vector(3 downto 0);
 	signal Mins_Number, Seconds_Tenth_Number, Seconds_Oneth_Number: std_logic_vector(3 downto 0);
 	signal Mins_Enable, Seconds_Tenth_Enable, Seconds_Oneth_Enable: std_logic;
 
@@ -27,9 +28,9 @@ architecture behaviour of Timer is
 
 begin
 
-	Mins_Number (1 downto 0) <= Data_In (9 downto 8);
-	Seconds_Tenth_Number <= Data_In (7 downto 4);
-	Seconds_Oneth_Number <= Data_In (3 downto 0);
+	Mins_Start (1 downto 0) <= Data_In (9 downto 8);
+	Seconds_Tenth_Start <= Data_In (7 downto 4);
+	Seconds_Oneth_Start <= Data_In (3 downto 0);
 
 	--Oneth_Enable
 	Seconds_Oneth_Enable <= '1';
