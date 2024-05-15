@@ -13,7 +13,7 @@ architecture test of Test_timer is
 	signal t_time: std_logic;
 
 	component Timer is
-		port (Clock, Start: in std_logic;
+		port (Clock_50M_Hz, Start: in std_logic;
 		      Data_In: in std_logic_vector (9 downto 0);
 	              Minutes, Seconds_tenth, Seconds_oneth: out std_logic_vector (6 downto 0);
 	              Time_Out: out std_logic);
@@ -25,9 +25,9 @@ begin
 	Initial_Clk: process
 	begin
 		t_clk <= '0';
-		wait for 5 ns;
+		wait for 20 ns;
 		t_clk <= '1';
-		wait for 5 ns;
+		wait for 20 ns;
 	end process Initial_Clk;
 
 	Initial_Data: process
