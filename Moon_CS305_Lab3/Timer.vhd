@@ -12,8 +12,8 @@ end entity Timer;
 
 architecture behaviour of Timer is
 
-	signal Mins_Start, Seconds_Tenth_Start, Seconds_Oneth_Start: std_logic_vector (3 downto 0);
-	signal Mins_Number, Seconds_Tenth_Number, Seconds_Oneth_Number: std_logic_vector (3 downto 0);
+	signal Mins_Start, Seconds_Tenth_Start, Seconds_Oneth_Start: std_logic_vector(3 downto 0);
+	signal Mins_Number, Seconds_Tenth_Number, Seconds_Oneth_Number: std_logic_vector(3 downto 0);
 	signal Mins_Enable, Seconds_Tenth_Enable, Seconds_Oneth_Enable: std_logic;
 	signal Tenth_Reset: std_logic;
 
@@ -54,20 +54,11 @@ begin
 	
 	--Set the numbers that stops the counter
 	process(Clock)
-		variable v_Seconds_Tenth_Start, v_Seconds_Oneth_Start: std_logic_vector (3 downto 0);
 	begin
-		if (Clock'event and Clock = '1') then
-			if (Start = '1') then
-				Mins_Start (1 downto 0) <= Data_In (9 downto 8);
-				v_Seconds_Tenth_Start := Data_In (7 downto 4);
-				v_Seconds_Oneth_Start := Data_In (3 downto 0);
-				if (v_Seconds_Tenth_Start > "0101") then
-					Seconds_Tenth_Start <= "0101";
-				end if;
-				if (v_Seconds_Oneth_Start > "1001") then
-					Seconds_Tenth_Start <= "1001";
-				end if;
-			end if;
+		if (Start = '1') then
+			Mins_Start (1 downto 0) <= Data_In (9 downto 8);
+			Seconds_Tenth_Start <= Data_In (7 downto 4);
+			Seconds_Oneth_Start <= Data_In (3 downto 0);
 		end if;
 	end process;
 
