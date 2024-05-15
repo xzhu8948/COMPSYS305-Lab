@@ -1,259 +1,204 @@
 m255
-K4
-z2
-!s11e vcom 2020.2 2020.04, Apr 19 2020
+K3
 13
-!s112 1.1
-!i10d 8192
-!i10e 25
-!i10f 100
 cModel Technology
-Z0 dC:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3
-T_opt
-!s110 1714364601
-V;]d<eMTO;<C3_QhF1:CN>2
-04 10 4 work test_timer test 1
-=1-cc96e534b2fa-662f20b8-348-54d4
-Z1 o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
-n@_opt
-Z3 OE;O;2020.2;71
-R0
-T_opt1
-!s110 1714365156
-VDbDKoOIROghfki=0_5bU=2
-04 16 4 work test_bcd_counter test 1
-=1-cc96e534b2fa-662f22e4-116-63e0
-R1
-R2
-n@_opt1
-R3
+Z0 dC:\Users\Moon\Downloads\COMPSYS305-Lab\Moon_CS305_Lab3
 Ebcd_counter
-Z4 w1714103661
-Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z7 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 63
-R0
-Z10 8C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_counter.vhd
-Z11 FC:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_counter.vhd
+Z1 w1715728987
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\Moon\Downloads\COMPSYS305-Lab\Moon_CS305_Lab3
+Z8 8C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_counter.vhd
+Z9 FC:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_counter.vhd
 l0
-L6 1
-VAzT>9f[XbcML=3T68]E5X0
-!s100 TWe0I?Z[e[^9`DBZ:n>Az0
-Z12 OE;C;2020.2;71
+L6
+VAGM`aCDF`g9==k:l6dZPW3
+Z10 OV;C;10.1d;51
 32
-Z13 !s110 1714365142
+Z11 !s108 1715748961.092000
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_counter.vhd|
+Z13 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_counter.vhd|
+Z14 o-work work -O0
+Z15 tExplicit 1
+!s100 5dO8ngh5S_9bo7RaD;^QR3
 !i10b 1
-Z14 !s108 1714365142.000000
-Z15 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_counter.vhd|
-Z16 !s107 C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_counter.vhd|
-!i113 0
-Z17 o-work work
-Z18 tExplicit 1 CvgOpt 0
 Abehaviour
+R2
+R3
+R4
 R5
 R6
-R7
-R8
-R9
-DEx4 work 11 bcd_counter 0 22 AzT>9f[XbcML=3T68]E5X0
-!i122 63
+DEx4 work 11 bcd_counter 0 22 AGM`aCDF`g9==k:l6dZPW3
 l13
-L11 40
-V;jb4SQ?l78mefR`J5f@Bj1
-!s100 eDSnb5VRKGMoUEU=i:5]>3
-R12
+L11
+V^?D]`T3@EkzQWnMzO;d<X0
+R10
 32
+R11
+R12
 R13
-!i10b 1
 R14
 R15
-R16
-!i113 0
-R17
-R18
+!s100 gV<jPb87G]H?>=FO::;>;1
+!i10b 1
 Ebcd_to_sevenseg
-Z19 w1714097578
-R8
-R9
-!i122 64
-R0
-Z20 8C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_to_7Seg.vhd
-Z21 FC:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_to_7Seg.vhd
+R1
+R5
+R6
+R7
+Z16 8C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_to_SevenSeg.vhd
+Z17 FC:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_to_SevenSeg.vhd
 l0
-L7 1
-V7bY1:N`AGbLAiX4>:8?ol3
-!s100 Y<RKO6oRmA6hZ4E3[T>]O3
-R12
+L7
+V_La796I8XHe^PeNhWl[NZ0
+R10
 32
-R13
-!i10b 1
+Z18 !s108 1715748961.172000
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_to_SevenSeg.vhd|
+Z20 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_to_SevenSeg.vhd|
 R14
-Z22 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_to_7Seg.vhd|
-Z23 !s107 C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/BCD_to_7Seg.vhd|
-!i113 0
-R17
-R18
+R15
+!s100 O5oGY1:bKa5VcIdj`@:e@3
+!i10b 1
 Aarc1
-R8
-R9
-DEx4 work 15 bcd_to_sevenseg 0 22 7bY1:N`AGbLAiX4>:8?ol3
-!i122 64
+R5
+R6
+DEx4 work 15 bcd_to_sevenseg 0 22 _La796I8XHe^PeNhWl[NZ0
 l13
-L12 14
-V6oDRL<BJUYF>GY];3UncB1
-!s100 NUT8ziEAK?Z7EIG;A6Z1[3
-R12
+L12
+VkjM4K=oMf=F_<ZJe@V0Kd3
+R10
 32
-R13
-!i10b 1
-R14
-R22
-R23
-!i113 0
-R17
 R18
+R19
+R20
+R14
+R15
+!s100 ^h;O@=WdL]zM<<b<Y:X`^0
+!i10b 1
 Etest_bcd_counter
-Z24 w1714365132
+R1
+R2
+R3
+R4
 R5
 R6
 R7
-R8
-R9
-!i122 60
-R0
-Z25 8C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_BCD_counter.vhd
-Z26 FC:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_BCD_counter.vhd
+Z21 8C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_BCD_counter.vhd
+Z22 FC:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_BCD_counter.vhd
 l0
-L6 1
-V=c9RA8MgcSb>KJOi_<2Ma3
-!s100 8n;0gjlmOVF7ah0>zC9O83
-R12
+L6
+V=0dQ6oE1K42F`iNTkg;lJ3
+R10
 32
-R13
-!i10b 1
+Z23 !s108 1715748961.244000
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_BCD_counter.vhd|
+Z25 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_BCD_counter.vhd|
 R14
-Z27 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_BCD_counter.vhd|
-Z28 !s107 C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_BCD_counter.vhd|
-!i113 0
-R17
-R18
+R15
+!s100 fiU<P_CcWV@^Jeo7mCABj1
+!i10b 1
 Atest
+R2
+R3
+R4
 R5
 R6
-R7
-R8
-R9
-DEx4 work 16 test_bcd_counter 0 22 =c9RA8MgcSb>KJOi_<2Ma3
-!i122 60
+DEx4 work 16 test_bcd_counter 0 22 =0dQ6oE1K42F`iNTkg;lJ3
 l18
-L9 39
-VN^i9HbR1Rj5C9]YhT^cW_3
-!s100 V:QWG?kC;ZOi49WL[h;NS3
-R12
+L9
+Va?4TD]<nB>oB7MBk2>z?;2
+!s100 WPGbd7N7fRFI:nnLIWY2S2
+R10
 32
-R13
-!i10b 1
+R23
+R24
+R25
 R14
-R27
-R28
-!i113 0
-R17
-R18
+R15
+!i10b 1
 Etest_timer
-Z29 w1714364579
+R1
+R2
+R3
+R4
 R5
 R6
 R7
-R8
-R9
-!i122 61
-R0
-Z30 8C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_Timer.vhd
-Z31 FC:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_Timer.vhd
+Z26 8C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_Timer.vhd
+Z27 FC:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_Timer.vhd
 l0
-L6 1
-VN;K3<:zhO<4NfN`@SA2Wa1
-!s100 Ue<9NkNPSmG>hnBVHc<YY2
-R12
+L6
+VhRz1MUPF0eRI==dD[nfMB3
+!s100 0bBkSkm:CQPIT6lijB]Te2
+R10
 32
-R13
 !i10b 1
+Z28 !s108 1715748961.321000
+Z29 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_Timer.vhd|
+Z30 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_Timer.vhd|
 R14
-Z32 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_Timer.vhd|
-Z33 !s107 C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/test_Timer.vhd|
-!i113 0
-R17
-R18
+R15
 Atest
+R2
+R3
+R4
 R5
 R6
-R7
-R8
-R9
-DEx4 work 10 test_timer 0 22 N;K3<:zhO<4NfN`@SA2Wa1
-!i122 61
+Z31 DEx4 work 10 test_timer 0 22 hRz1MUPF0eRI==dD[nfMB3
 l22
-L9 37
-VJo`f90HZJje:>YETUj]G>3
-!s100 6UclXmJ>`eHD^fDiZ<G<00
-R12
+L9
+Z32 VfI>hT>;WjQ=R9E@LmPA_G2
+Z33 !s100 AWkD;4i31g5Agm:mi?NVb0
+R10
 32
-R13
 !i10b 1
+R28
+R29
+R30
 R14
-R32
-R33
-!i113 0
-R17
-R18
+R15
 Etimer
-Z34 w1714104083
+Z34 w1715748907
+R2
+R3
+R4
 R5
 R6
 R7
-R8
-R9
-!i122 62
-R0
-Z35 8C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/Timer.vhd
-Z36 FC:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/Timer.vhd
+Z35 8C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/Timer.vhd
+Z36 FC:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/Timer.vhd
 l0
-L6 1
-V7IYGKJ=eAm9J672Nz>_L_3
-!s100 _m9EOhzmGcaf_iP6C_ljl0
-R12
+L6
+Va?k7;3OS2n463C;G9>LeD0
+R10
 32
-R13
-!i10b 1
+Z37 !s108 1715748960.985000
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/Timer.vhd|
+Z39 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/Timer.vhd|
 R14
-Z37 !s90 -reportprogress|300|-work|work|C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/Timer.vhd|
-Z38 !s107 C:/Users/xzhu664.UOA/Downloads/Moon_CS305_Lab3/Timer.vhd|
-!i113 0
-R17
-R18
+R15
+!s100 gL_j[?1:TWJ=]5:iDm?790
+!i10b 1
 Abehaviour
+R2
+R3
+R4
 R5
 R6
-R7
-R8
-R9
-DEx4 work 5 timer 0 22 7IYGKJ=eAm9J672Nz>_L_3
-!i122 62
-l28
-L13 43
-Vkjggo1iaEPcQo];8XhkhV0
-!s100 R6Z_bR0G2L>8<RQc[ZPBG3
-R12
+DEx4 work 5 timer 0 22 a?k7;3OS2n463C;G9>LeD0
+l30
+L13
+VC]<dl7?CY632:bkRfXTc[0
+R10
 32
-R13
-!i10b 1
-R14
 R37
 R38
-!i113 0
-R17
-R18
+R39
+R14
+R15
+!s100 kdS;9^>J5[BzSRD]C;O2Y3
+!i10b 1
