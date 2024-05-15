@@ -18,7 +18,7 @@ L6
 VAGM`aCDF`g9==k:l6dZPW3
 Z10 OV;C;10.1d;51
 32
-Z11 !s108 1715736207.189000
+Z11 !s108 1715748961.092000
 Z12 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_counter.vhd|
 Z13 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_counter.vhd|
 Z14 o-work work -O0
@@ -56,7 +56,7 @@ L7
 V_La796I8XHe^PeNhWl[NZ0
 R10
 32
-Z18 !s108 1715736207.262000
+Z18 !s108 1715748961.172000
 Z19 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_to_SevenSeg.vhd|
 Z20 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/BCD_to_SevenSeg.vhd|
 R14
@@ -94,7 +94,7 @@ L6
 V=0dQ6oE1K42F`iNTkg;lJ3
 R10
 32
-Z23 !s108 1715736207.332000
+Z23 !s108 1715748961.244000
 Z24 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_BCD_counter.vhd|
 Z25 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_BCD_counter.vhd|
 R14
@@ -137,7 +137,7 @@ VhRz1MUPF0eRI==dD[nfMB3
 R10
 32
 !i10b 1
-Z28 !s108 1715736207.408000
+Z28 !s108 1715748961.321000
 Z29 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_Timer.vhd|
 Z30 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/test_Timer.vhd|
 R14
@@ -162,7 +162,7 @@ R30
 R14
 R15
 Etimer
-Z34 w1715736183
+Z34 w1715748907
 R2
 R3
 R4
@@ -176,7 +176,7 @@ L6
 Va?k7;3OS2n463C;G9>LeD0
 R10
 32
-Z37 !s108 1715736207.110000
+Z37 !s108 1715748960.985000
 Z38 !s90 -reportprogress|300|-work|work|C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/Timer.vhd|
 Z39 !s107 C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3/Timer.vhd|
 R14
@@ -192,7 +192,7 @@ R6
 DEx4 work 5 timer 0 22 a?k7;3OS2n463C;G9>LeD0
 l30
 L13
-Vj_B>5H7^AehU]Tha^4jZ43
+VC]<dl7?CY632:bkRfXTc[0
 R10
 32
 R37
@@ -200,5 +200,5 @@ R38
 R39
 R14
 R15
-!s100 TBGfTo6]L4Xdkd@>IUN691
+!s100 kdS;9^>J5[BzSRD]C;O2Y3
 !i10b 1
