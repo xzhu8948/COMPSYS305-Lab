@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Timer
-Wed May 15 21:46:47 2024
+Mon May 20 19:30:53 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -48,14 +48,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 15 21:46:47 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 20 19:30:53 2024       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Timer                                       ;
 ; Top-level Entity Name           ; Timer                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 48                                          ;
-; Total pins                      ; 34                                          ;
+; Total registers                 ; 52                                          ;
+; Total pins                      ; 44                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -172,15 +172,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------+---------+
-; Timer.vhd                        ; yes             ; User VHDL File        ; C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/Timer.vhd           ;         ;
-; bcd_counter.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/bcd_counter.vhd     ;         ;
-; bcd_to_sevenseg.vhd              ; yes             ; Auto-Found VHDL File  ; C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/bcd_to_sevenseg.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------+---------+
+; Timer.vhd                        ; yes             ; User VHDL File        ; C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd           ;         ;
+; bcd_counter.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/bcd_counter.vhd     ;         ;
+; bcd_to_sevenseg.vhd              ; yes             ; Auto-Found VHDL File  ; C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/bcd_to_sevenseg.vhd ;         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -188,25 +188,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 54             ;
+; Estimate of Logic utilization (ALMs needed) ; 52             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 87             ;
+; Combinational ALUT usage for logic          ; 83             ;
 ;     -- 7 input functions                    ; 0              ;
 ;     -- 6 input functions                    ; 19             ;
 ;     -- 5 input functions                    ; 4              ;
-;     -- 4 input functions                    ; 31             ;
+;     -- 4 input functions                    ; 27             ;
 ;     -- <=3 input functions                  ; 33             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 48             ;
+; Dedicated logic registers                   ; 52             ;
 ;                                             ;                ;
-; I/O pins                                    ; 34             ;
+; I/O pins                                    ; 44             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 36             ;
-; Total fan-out                               ; 541            ;
-; Average fan-out                             ; 2.67           ;
+; Maximum fan-out                             ; 40             ;
+; Total fan-out                               ; 519            ;
+; Average fan-out                             ; 2.33           ;
 +---------------------------------------------+----------------+
 
 
@@ -215,7 +215,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name     ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------+--------------+
-; |Timer                                  ; 87 (52)             ; 48 (36)                   ; 0                 ; 0          ; 34   ; 0            ; |Timer                                    ; Timer           ; work         ;
+; |Timer                                  ; 83 (48)             ; 52 (40)                   ; 0                 ; 0          ; 44   ; 0            ; |Timer                                    ; Timer           ; work         ;
 ;    |BCD_counter:Mins_Counter|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Timer|BCD_counter:Mins_Counter           ; BCD_counter     ; work         ;
 ;    |BCD_counter:Seconds_Oneth_Counter|  ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Timer|BCD_counter:Seconds_Oneth_Counter  ; BCD_counter     ; work         ;
 ;    |BCD_counter:Seconds_Tenth_Counter|  ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Timer|BCD_counter:Seconds_Tenth_Counter  ; BCD_counter     ; work         ;
@@ -232,10 +232,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                                  ; Reason for Removal                     ;
 +------------------------------------------------+----------------------------------------+
 ; Mins_Start[2,3]                                ; Stuck at GND due to stuck port data_in ;
+; Seconds_Tenth_Start[3]                         ; Stuck at GND due to stuck port data_in ;
 ; BCD_counter:Seconds_Oneth_Counter|Current_Mode ; Stuck at GND due to stuck port data_in ;
 ; BCD_counter:Seconds_Tenth_Counter|Current_Mode ; Stuck at GND due to stuck port data_in ;
 ; BCD_counter:Mins_Counter|Current_Mode          ; Stuck at GND due to stuck port data_in ;
-; Seconds_Tenth_Start[3]                         ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 6          ;                                        ;
 +------------------------------------------------+----------------------------------------+
 
@@ -245,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+---------------------------+------------------------------------------------+
 ; Register name ; Reason for Removal        ; Registers Removed due to This Register         ;
 +---------------+---------------------------+------------------------------------------------+
-; Mins_Start[2] ; Stuck at GND              ; BCD_counter:Seconds_Tenth_Counter|Current_Mode ;
+; Mins_Start[3] ; Stuck at GND              ; BCD_counter:Seconds_Tenth_Counter|Current_Mode ;
 ;               ; due to stuck port data_in ;                                                ;
 +---------------+---------------------------+------------------------------------------------+
 
@@ -255,12 +255,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 48    ;
-; Number of registers using Synchronous Clear  ; 26    ;
+; Total registers                              ; 52    ;
+; Number of registers using Synchronous Clear  ; 30    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 37    ;
+; Number of registers using Clock Enable       ; 11    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -270,10 +270,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Timer|BCD_counter:Mins_Counter|Q1[3]                     ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Timer|BCD_counter:Seconds_Tenth_Counter|Q1[0]            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Timer|BCD_counter:Seconds_Oneth_Counter|Q1[1]            ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |Timer|Clock_counter[3]                                   ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |Timer|Clock_counter[10]                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Timer|BCD_counter:Mins_Counter|Q1[0]                     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Timer|BCD_counter:Seconds_Tenth_Counter|Q1[2]            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Timer|BCD_counter:Seconds_Oneth_Counter|Q1[2]            ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Timer|BCD_to_SevenSeg:Mins_7Seg|SevenSeg_out[3]          ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Timer|BCD_to_SevenSeg:Seconds_Tenth_7Seg|SevenSeg_out[3] ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Timer|BCD_to_SevenSeg:Seconds_Oneth_7Seg|SevenSeg_out[5] ;
@@ -312,25 +312,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 48                          ;
+; arriav_ff             ; 52                          ;
 ;     ENA               ; 11                          ;
-;     ENA SCLR          ; 26                          ;
+;     SCLR              ; 30                          ;
 ;     SLD               ; 1                           ;
 ;     plain             ; 10                          ;
-; arriav_lcell_comb     ; 94                          ;
-;     arith             ; 26                          ;
-;         1 data inputs ; 26                          ;
-;     normal            ; 68                          ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 31                          ;
+; arriav_lcell_comb     ; 91                          ;
+;     arith             ; 30                          ;
+;         1 data inputs ; 30                          ;
+;     normal            ; 61                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 3                           ;
+;         4 data inputs ; 27                          ;
 ;         5 data inputs ; 4                           ;
 ;         6 data inputs ; 19                          ;
-; boundary_port         ; 34                          ;
+; boundary_port         ; 44                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.50                        ;
-; Average LUT depth     ; 2.39                        ;
+; Max LUT depth         ; 3.90                        ;
+; Average LUT depth     ; 2.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -349,22 +349,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed May 15 21:46:35 2024
+    Info: Processing started: Mon May 20 19:30:42 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Timer -c Timer
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
-    Info (12022): Found design unit 1: Timer-behaviour File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/Timer.vhd Line: 21
-    Info (12023): Found entity 1: Timer File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/Timer.vhd Line: 13
+    Info (12022): Found design unit 1: Timer-behaviour File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 22
+    Info (12023): Found entity 1: Timer File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 14
 Info (12127): Elaborating entity "Timer" for the top level hierarchy
 Warning (12125): Using design file bcd_counter.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: BCD_counter-behaviour File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/bcd_counter.vhd Line: 11
-    Info (12023): Found entity 1: BCD_counter File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/bcd_counter.vhd Line: 6
-Info (12128): Elaborating entity "BCD_counter" for hierarchy "BCD_counter:Mins_Counter" File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/Timer.vhd Line: 44
+    Info (12022): Found design unit 1: BCD_counter-behaviour File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/bcd_counter.vhd Line: 11
+    Info (12023): Found entity 1: BCD_counter File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/bcd_counter.vhd Line: 6
+Info (12128): Elaborating entity "BCD_counter" for hierarchy "BCD_counter:Mins_Counter" File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 45
 Warning (12125): Using design file bcd_to_sevenseg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: BCD_to_SevenSeg-arc1 File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/bcd_to_sevenseg.vhd Line: 12
-    Info (12023): Found entity 1: BCD_to_SevenSeg File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/bcd_to_sevenseg.vhd Line: 7
-Info (12128): Elaborating entity "BCD_to_SevenSeg" for hierarchy "BCD_to_SevenSeg:Mins_7Seg" File: C:/Users/Moon/Downloads/COMPSYS305-Lab/Moon_CS305_Lab3_Implement/Timer.vhd Line: 49
+    Info (12022): Found design unit 1: BCD_to_SevenSeg-arc1 File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/bcd_to_sevenseg.vhd Line: 12
+    Info (12023): Found entity 1: BCD_to_SevenSeg File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/bcd_to_sevenseg.vhd Line: 7
+Info (12128): Elaborating entity "BCD_to_SevenSeg" for hierarchy "BCD_to_SevenSeg:Mins_7Seg" File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 50
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top was ignored
@@ -393,14 +401,19 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 124 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 90 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Wed May 15 21:46:47 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:04
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 16
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 16
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 16
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Moon/Downloads/Moon_CS305_Lab3_Implement/Timer.vhd Line: 17
+Info (21057): Implemented 133 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 89 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Mon May 20 19:30:53 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:08
 
 

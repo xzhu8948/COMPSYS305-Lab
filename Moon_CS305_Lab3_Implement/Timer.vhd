@@ -6,15 +6,16 @@ use IEEE.numeric_std.all;
 -- HEX0 = Seconds_oneth
 -- HEX1 = Seconds_tenth
 -- HEX2 = Minutes
+-- HEX3 = Always 0
 -- KEY (KEY[0]) = Start
 -- LEDR (LEDR[0]) = Time_Out
 -- SW = Data_In
 
 entity Timer is 
 	port (CLOCK_50: in std_logic;
-		  KEY: in std_logic_vector (0 downto 0);
+		  KEY: in std_logic_vector (3 downto 0);
 	      SW: in std_logic_vector (9 downto 0);
-	      HEX2, HEX1, HEX0: out std_logic_vector (6 downto 0);
+	      HEX3, HEX2, HEX1, HEX0: out std_logic_vector (6 downto 0);
 	      LEDR: out std_logic_vector (0 downto 0));
 end entity Timer;
 
@@ -25,7 +26,7 @@ architecture behaviour of Timer is
 	signal Mins_Enable, Seconds_Tenth_Enable, Seconds_Oneth_Enable: std_logic;
 	signal Tenth_Reset: std_logic;
 	signal Clock: std_logic;
-	signal Clock_counter: std_logic_vector (25 downto 0);
+	signal Clock_counter: std_logic_vector (29 downto 0);
 	signal Start: std_logic;
 
 	component BCD_counter is 
@@ -61,40 +62,44 @@ begin
 	Tenth_Reset <= '1' when ((Seconds_Tenth_Number = "0101" and Seconds_Tenth_Enable = '1') or Start = '1') else '0';
 
 	--finish count and output Time_Out
-	LEDR(0) <= '0' when (Seconds_Oneth_Enable = '0') else '1';
+	LEDR(0) <= '1' when (Seconds_Oneth_Enable = '0') else '0';
 
 	--initial Start
 	Start <= not KEY(0);
+
+	--Hex3 output to make it to look better
+	HEX3 <= "1000000";
 	
 	--Set the numbers that stops the counter
-	process(CLOCK_50)
+	process(CLOCK_50, Start)
 		variable v_Seconds_Tenth_Start, v_Seconds_Oneth_Start: std_logic_vector (3 downto 0);
 	begin
 		if (CLOCK_50'event and CLOCK_50 = '1') then
 			if (Start = '1') then
 				Mins_Start <= "00" & SW (9 downto 8);
-				v_Seconds_Tenth_Start := SW (7 downto 4);
+				v_Seconds_Tenth_Start := "0" & SW (6 downto 4);
 				v_Seconds_Oneth_Start := SW (3 downto 0);
-				if (v_Seconds_Tenth_Start > "0101") then
+
+				if ((v_Seconds_Tenth_Start and "0101") = "0110") then
 					v_Seconds_Tenth_Start := "0101";
 				end if;
-				Seconds_Tenth_Start <= v_Seconds_Tenth_Start;
-				if (v_Seconds_Oneth_Start > "1001") then
+
+				if (v_Seconds_Oneth_Start(3) = '1' and ((v_Seconds_Oneth_Start or "1001") /= "1001")) then
 					v_Seconds_Oneth_Start := "1001";
 				end if;
+
+				Seconds_Tenth_Start <= v_Seconds_Tenth_Start;
 				Seconds_Oneth_Start <= v_Seconds_Oneth_Start;
 
-				Clock <= not clock;
+				Clock <= '1';
 				Clock_counter <= (others => '0');
 
-			else
-				if (Clock_counter = "01011111010111100001000000") then
-					Clock <= '0';
-				elsif (Clock_counter = "10111110101111000010000000") then
-					Clock <= '1';
+			elsif (Start = '0') then
+				if (Clock_counter = "1011111010111100001000000") then
+					Clock <= not Clock;
 					Clock_counter <= (others => '0');
 				else
-					Clock_counter <= Clock_counter + "1";
+					Clock_counter <= Clock_counter + '1';
 				end if;
 			end if;
 		end if;

@@ -3,11 +3,19 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
 
+-- HEX0 = Seconds_oneth
+-- HEX1 = Seconds_tenth
+-- HEX2 = Minutes
+-- KEY (KEY[0]) = Start
+-- LEDR (LEDR[0]) = Time_Out
+-- SW = Data_In
+
 entity Timer is 
-	port (Clock_50M_Hz, Start: in std_logic;
+	port (CLOCK: in std_logic;
+		  Start: in std_logic;
 	      Data_In: in std_logic_vector (9 downto 0);
 	      Minutes, Seconds_tenth, Seconds_oneth: out std_logic_vector (6 downto 0);
-	      Time_Out: out std_logic);
+	      Time_Out: out std_logic_vector (0 downto 0));
 end entity Timer;
 
 architecture behaviour of Timer is
@@ -16,8 +24,6 @@ architecture behaviour of Timer is
 	signal Mins_Number, Seconds_Tenth_Number, Seconds_Oneth_Number: std_logic_vector (3 downto 0);
 	signal Mins_Enable, Seconds_Tenth_Enable, Seconds_Oneth_Enable: std_logic;
 	signal Tenth_Reset: std_logic;
-	signal Clock: std_logic;
-	signal Clock_counter: std_logic_vector (25 downto 0);
 
 	component BCD_counter is 
 		port (Clk, Direction, Init, Enable : in std_logic;
@@ -44,44 +50,34 @@ begin
 	--Oneth_Enable
 	Seconds_Oneth_Enable <= '0' when ((Seconds_Oneth_Number = Seconds_Oneth_Start) and (Seconds_Tenth_Number = Seconds_Tenth_Start) and (Mins_Number = Mins_Start)) else '1';
 	--Tenth_Enable
-	Seconds_Tenth_Enable <= '1' when (Seconds_Oneth_Number = "1001") else '0';
+	Seconds_Tenth_Enable <= '1' when ((Seconds_Oneth_Number = "1001") and (Seconds_Oneth_Enable = '1')) else '0';
 	--Mins_Enable
-	Mins_Enable <= '1' when (Seconds_Tenth_Number = "0110") else '0';
+	Mins_Enable <= '1' when ((Seconds_Tenth_Number = "0101") and (Seconds_Tenth_Enable  = '1')) else '0';
 
 	--Tenth_Reset when it is reach 6
-	Tenth_Reset <= '1' when (Seconds_Tenth_Number = "0110" or Start = '1') else '0';
+	Tenth_Reset <= '1' when ((Seconds_Tenth_Number = "0101" and Seconds_Tenth_Enable = '1') or Start = '1') else '0';
 
 	--finish count and output Time_Out
-	Time_Out <= '1' when (Seconds_Oneth_Enable = '0') else '0';
+	Time_Out <= "1" when (Seconds_Oneth_Enable = '0') else "0";
 	
 	--Set the numbers that stops the counter
-	process(Clock_50M_Hz)
+	process(CLOCK, Start)
 		variable v_Seconds_Tenth_Start, v_Seconds_Oneth_Start: std_logic_vector (3 downto 0);
 	begin
-		if (Clock_50M_Hz'event and Clock_50M_Hz = '1') then
+		if (CLOCK'event and CLOCK = '1') then
 			if (Start = '1') then
-				Mins_Start (1 downto 0) <= Data_In (9 downto 8);
-				v_Seconds_Tenth_Start := Data_In (7 downto 4);
+				Mins_Start <= "00" & Data_In (9 downto 8);
+				v_Seconds_Tenth_Start := "0" & Data_In (6 downto 4);
 				v_Seconds_Oneth_Start := Data_In (3 downto 0);
-				if (v_Seconds_Tenth_Start > "0101") then
-					Seconds_Tenth_Start <= "0101";
-				end if;
-				if (v_Seconds_Oneth_Start > "1001") then
-					Seconds_Tenth_Start <= "1001";
+
+				if ((v_Seconds_Tenth_Start and "0101") = "0110") then
+					v_Seconds_Tenth_Start := "0101";
 				end if;
 
-				Clock <= '1';
-				Clock_counter <= "00000000000000000000000000";
-
-			else
-				if (Clock_counter = "01011111010111100001000000") then
-					Clock <= '0';
-				elsif (Clock_counter = "10111110101111000010000000") then
-					Clock <= '1';
-					Clock_counter <= "00000000000000000000000000";
-				else
-					Clock_counter <= Clock_counter + "00000000000000000000000001";
+				if (v_Seconds_Oneth_Start(3) = '1' and ((v_Seconds_Oneth_Start or "1001") /= "1001")) then
+					v_Seconds_Oneth_Start := "1001";
 				end if;
+
 			end if;
 		end if;
 	end process;
